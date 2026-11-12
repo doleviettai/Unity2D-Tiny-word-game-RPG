@@ -4,6 +4,7 @@ using TMPro;
 public class StatsManager : MonoBehaviour
 {
     public static StatsManager Instance;
+    public StatsUI statsUI;
     public TMP_Text healthText;
 
 
@@ -30,13 +31,28 @@ public class StatsManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }   
+        }
     }
 
     public void UpdateMaxHealth(int amount)
     {
         maxHealth += amount;
-        currentHealth += amount;
         healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+    }
+
+    public void UpdateHealth(int amount)
+    {
+        currentHealth += amount;
+        if(currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+    }
+
+    public void UpdateSpeed(int amount)
+    {
+        speed += amount;
+        statsUI.UpdateAllStats();
     }
 }

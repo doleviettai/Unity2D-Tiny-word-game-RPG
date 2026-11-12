@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
 
     private bool isKnockback;
+    public bool isShooting;
+
     public Player_Combat player_Combat;
 
     private void Update()
@@ -29,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
     // fixed update is called 50x frame
     void FixedUpdate()
     {
+        if(isShooting == true)
+        {
+            rb.velocity = Vector2.zero;
+        }
         if(isKnockback == false)
         {
             float horizontal = Input.GetAxis("Horizontal");

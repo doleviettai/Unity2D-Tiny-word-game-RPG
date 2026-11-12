@@ -73,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,12 +139,12 @@ TextureImporter:
       name: Archer_Bow_Blue_0
       rect:
         serializedVersion: 2
-        x: 68
-        y: 259
-        width: 14
-        height: 14
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Archer_Bow_Blue_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 251
-        width: 19
-        height: 57
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Archer_Bow_Blue_2
       rect:
         serializedVersion: 2
-        x: 46
-        y: 62
-        width: 48
-        height: 53
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Archer_Bow_Blue_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 63
-        width: 20
-        height: 57
+        x: 384
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: Archer_Bow_Blue_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 62
-        width: 55
-        height: 58
+        x: 576
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: Archer_Bow_Blue_5
       rect:
         serializedVersion: 2
-        x: 475
-        y: 62
-        width: 67
-        height: 57
+        x: 768
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: Archer_Bow_Blue_6
       rect:
         serializedVersion: 2
-        x: 641
-        y: 59
-        width: 74
-        height: 57
+        x: 960
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: Archer_Bow_Blue_7
       rect:
         serializedVersion: 2
-        x: 828
-        y: 59
-        width: 73
-        height: 57
+        x: 1152
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: Archer_Bow_Blue_8
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 59
-        width: 73
-        height: 57
+        x: 1344
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -333,99 +333,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Archer_Bow_Blue_9
-      rect:
-        serializedVersion: 2
-        x: 1202
-        y: 73
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 739d834535ec9a680800000000000000
-      internalID: -8743230344272488137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archer_Bow_Blue_10
-      rect:
-        serializedVersion: 2
-        x: 1265
-        y: 59
-        width: 19
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cefef6e9bf3ce8680800000000000000
-      internalID: -8750841540471951380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archer_Bow_Blue_11
-      rect:
-        serializedVersion: 2
-        x: 1409
-        y: 67
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7500a66a8bcaa3320800000000000000
-      internalID: 2538531249042620503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archer_Bow_Blue_12
-      rect:
-        serializedVersion: 2
-        x: 1454
-        y: 57
-        width: 19
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b22eda13aaf97f20800000000000000
-      internalID: 3421040970401981108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7ac8a06c693583a4490acb069ecc5866
     internalID: 0
     vertices: []
     indices: 
@@ -433,13 +345,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Archer_Bow_Blue_0: 4329173317399445151
       Archer_Bow_Blue_1: 8555011917411257359
-      Archer_Bow_Blue_10: -8750841540471951380
-      Archer_Bow_Blue_11: 2538531249042620503
-      Archer_Bow_Blue_12: 3421040970401981108
       Archer_Bow_Blue_2: -8681932915944446542
       Archer_Bow_Blue_3: 5492699376048798953
       Archer_Bow_Blue_4: -6841447439412970388
@@ -447,7 +358,6 @@ TextureImporter:
       Archer_Bow_Blue_6: -1019287073827455614
       Archer_Bow_Blue_7: 5112643037596333782
       Archer_Bow_Blue_8: -3112607047936341857
-      Archer_Bow_Blue_9: -8743230344272488137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
