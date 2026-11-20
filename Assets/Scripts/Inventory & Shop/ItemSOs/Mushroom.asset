@@ -15,7 +15,8 @@ MonoBehaviour:
   itemName: Mushroom
   itemDescription: It's an item... it mushes???
   icon: {fileID: 8793915729297761979, guid: 70cb77e37f2a4684ea526cb817b2c4f0, type: 3}
-  isGold: 1
+  isGold: 0
+  stackSize: 3
   currentHealth: 5
   maxHealth: 0
   speed: 0

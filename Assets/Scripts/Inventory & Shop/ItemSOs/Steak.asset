@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemName: Steak
   itemDescription: 
-  icon: {fileID: -8366115955088691986, guid: 016d6f31c4436a7499c42d8f574268b9, type: 3}
-  isGold: 1
+  icon: {fileID: 5558420398955925738, guid: d7898c591be088a4bb3ee5bea84442d8, type: 3}
+  isGold: 0
+  stackSize: 3
   currentHealth: 5
   maxHealth: 0
   speed: 0

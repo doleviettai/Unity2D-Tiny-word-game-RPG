@@ -13,31 +13,67 @@ public class InventorySlot : MonoBehaviour , IPointerClickHandler
     public TMP_Text quantityText;
 
     public InventoryManager inventoryManager;
+    private ShopManager activeShop;
 
     public void Start()
     {
         inventoryManager = GetComponentInParent<InventoryManager>();
     }
 
+
+    private void OnEnable()
+    {
+        ShopKeeper.OnShopStateChanged += HandleShopStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        ShopKeeper.OnShopStateChanged -= HandleShopStateChanged;
+    }
+
+    private void HandleShopStateChanged(ShopManager shopManager, bool isOpen)
+    {
+        activeShop = isOpen ? shopManager : null;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if(quantity > 0)
         {
-            if(eventData.button == PointerEventData.InputButton.Left)
+            if (eventData.button == PointerEventData.InputButton.Left)
             {
-                if( itemSO.currentHealth > 0 &&
-                    StatsManager.Instance.currentHealth >= StatsManager.Instance.maxHealth)
+                if(activeShop != null)
                 {
-                    return;
+                    activeShop.SellItem(itemSO);
+                    quantity--;
+                    UpdateUI();
                 }
-                inventoryManager.UseItem(this);
-            }
+                else
+                {
+                    if (itemSO.currentHealth > 0 &&
+                    StatsManager.Instance.currentHealth >= StatsManager.Instance.maxHealth)
+                    {
+                        return;
+                    }
+                    inventoryManager.UseItem(this);
+                }
+
+                
+            } else if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                inventoryManager.DropItem(this);
+             }
         }
     }
 
     public void UpdateUI()
     {
-        if(itemSO != null)
+        if(quantity <= 0)
+        {
+            itemSO = null;
+        }
+
+        if (itemSO != null)
         {
             itemImage.sprite = itemSO.icon;
             itemImage.gameObject.SetActive(true);
